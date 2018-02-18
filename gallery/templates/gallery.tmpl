@@ -2,20 +2,36 @@
 
 {% block content %}
 
-    <h1> Foto gallery </h1>
+    <h1> Photo gallery </h1>
 
     <form action="{{ url_for('gallery.upload') }}" method=post enctype=multipart/form-data>
       <p><input type=file name=image>
          <input type=submit value=Upload>
     </form>
-    <ul id="container">
+    <ul id="container" style="display: flex;" >
         {% for image_list in images %}
          <div class="row">
          <a href={{ url_for('gallery.show_image', filename=image_list[0].filename ) }}>
          {% for image in image_list %}
-            <div class="foto_element">
-                <li><img class="item" src="{{ url_for('static', filename=['gallery', image.subdir, image.filename ]|join('/')) }}" width="300" height="300"/></li>
+
+       <div class="row" style="width: calc(100% * (1/3) - 10px - 1px);     display: inline-block;
+    margin:10px 0 0 2%;
+    flex-grow: 1;
+    height:100px;">
+          <div class="card">
+            <div class="card-image">
+              <img src="{{ url_for('static', filename=['gallery', image.subdir, image.filename ]|join('/')) }}"  max-width="25%" max-height="25%">
+              <span class="card-title">Sample: {{image.filename[1:10]}}</span>
             </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
          {% endfor %}
           </a>
          </div>

@@ -2,8 +2,6 @@
 <html>
 <head>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="static/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
-    <script src="static/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
     <link href="static/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -28,7 +26,6 @@
   </div>
 <div class="col-xs-6 col-xs-offset-3 margin ">
 	{% block content %}{% endblock %}
-	<hr>
 	{% block appOutput %}{% endblock %}
 </div>
 </body>
