@@ -15,7 +15,7 @@ import time
 import fnmatch
 import flask
 
-import Image
+from PIL import Image
 
 
 class FilesystemObjectDoesNotExist(Exception):

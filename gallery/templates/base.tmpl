@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-	{% block head %}{% endblock %}
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="static/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="static/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <link href="static/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Smartoscope</title>
 </head>
 <body>
+<div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Smartoscope</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/#" class="active">Home</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/authors>Authors</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/faq">FAQ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 <div class="col-xs-6 col-xs-offset-3 margin ">
 	{% block content %}{% endblock %}
 	<hr>
