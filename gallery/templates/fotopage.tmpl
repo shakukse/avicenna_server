@@ -1,0 +1,21 @@
+{% extends "smartoscope.tmpl" %}
+
+{% block content %}
+
+    <h1> Foto datails </h1>
+
+
+    <ul id="container">
+        {% for image in image %}
+            <div class="column">
+                <li><img class="item" src="{{ url_for('static', filename=['gallery', image.subdir, image.filename ]|join('/')) }}" width="300" height="300"/></li>
+            </div>
+            <div class="column">
+                <li><img class="item" src="{{ url_for('static', filename=['gallery', image.subdir, image.filename ]|join('/')) }}" width="300" height="300"/></li>
+            </div>
+            <div class="column">
+                <li><img class="item" src="{{ url_for('static', filename=['gallery', image.subdir, image.filename ]|join('/')) }}" width="300" height="300"/></li>
+            </div>
+         {% endfor %}
+    </ul>
+{% endblock %}
