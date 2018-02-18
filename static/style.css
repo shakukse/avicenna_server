@@ -1,0 +1,120 @@
+.noRadiusWhite h1 {
+	padding: 0;
+	margin: 1em 0;
+	color: #000;
+	font-size: 180%;
+}
+
+.query { color: red; }
+
+input, textarea, .margin-bottom{
+    margin-bottom: 20px;
+}
+
+.ui-tabs-hide {
+    display: none !important;
+ }
+
+.paragraph, .annotation{
+    //float:left;
+}
+
+.paragraph .tag{
+    color: #999999;
+    font-size: 12px;
+}
+
+.annotation input{
+    margin: 0px;
+
+}
+
+.color-paragraph{
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.margin{
+    margin: 15px;
+}
+
+.margin-t, .margin-tl{
+    margin-top: 15px;
+}
+
+
+.margin-l, .margin-tl{
+    margin-left: 15px;
+}
+
+.margin-r{
+    margin-right: 15px;
+}
+
+.highlight-word{
+    //font-weight: bold;
+    background-color: #FFFF99;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
+
+.h1 {
+    font-size: 36px;
+}
+.h2 {
+    font-size: 32px;
+}
+.h3 {
+    font-size: 28px;
+}
+.h4 {
+    font-size: 24px;
+}
+.h5 {
+    font-size: 20px;
+}
+.h6 {
+    font-size: 18px;
+}
+
+.foto_element{
+    float: left;
+    width: 33.33%;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
